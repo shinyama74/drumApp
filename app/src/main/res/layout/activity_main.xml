@@ -9,6 +9,7 @@
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        //android:layout_centerInparent="true"
         app:columnCount="6"
         app:rowCount="2">
 
