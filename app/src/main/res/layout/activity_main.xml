@@ -4,13 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/woodfloor"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        //android:layout_centerInparent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         app:columnCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:rowCount="2">
 
         <ImageButton
@@ -27,8 +33,8 @@
 
         <ImageButton
             android:id="@+id/pianoButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:layout_height="117dp"
             android:background="#00000000"
             android:onClick="piano1"
             android:scaleType="fitCenter"
@@ -122,4 +128,17 @@
             app:layout_row="0"
             app:srcCompat="@drawable/cymbal_image" />
     </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

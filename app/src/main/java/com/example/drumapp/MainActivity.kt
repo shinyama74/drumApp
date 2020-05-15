@@ -48,44 +48,44 @@ class MainActivity : AppCompatActivity() {
         }
     }
     fun cymbal2(view: View){
-        if(mSoundID[1] != null) {
-            mSoundPool.play(mSoundID[1] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
+        if(mSoundID[0] != null) {
+            mSoundPool.play(mSoundID[0] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
         }
     }
 
     fun drum1(view: View) {
+        if (mSoundID[1] != null) {
+            mSoundPool.play(mSoundID[1] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
+        }
+    }
+
+    fun drum2(view: View) {
+        if (mSoundID[1] != null) {
+            mSoundPool.play(mSoundID[1] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
+        }
+    }
+
+    fun guitra1(view: View) {
         if (mSoundID[2] != null) {
             mSoundPool.play(mSoundID[2] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
         }
     }
 
-    fun drum2(view: View) {
+    fun guitar2(view: View) {
+        if (mSoundID[2] != null) {
+            mSoundPool.play(mSoundID[2] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
+        }
+    }
+
+    fun piano1(view: View) {
         if (mSoundID[3] != null) {
             mSoundPool.play(mSoundID[3] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
         }
     }
 
-    fun guitra1(view: View) {
-        if (mSoundID[4] != null) {
-            mSoundPool.play(mSoundID[4] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
-        }
-    }
-
-    fun guitar2(view: View) {
-        if (mSoundID[5] != null) {
-            mSoundPool.play(mSoundID[5] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
-        }
-    }
-
-    fun piano1(view: View) {
-        if (mSoundID[6] != null) {
-            mSoundPool.play(mSoundID[6] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
-        }
-    }
-
     fun piano2(view: View) {
-        if (mSoundID[7] != null) {
-            mSoundPool.play(mSoundID[7] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
+        if (mSoundID[3] != null) {
+            mSoundPool.play(mSoundID[3] as Int, 1.0F, 1.0F, 0, 0, 1.0F)
         }
     }
 }
