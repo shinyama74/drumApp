@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="6"
+        app:rowCount="2">
+
+        <ImageButton
+            android:id="@+id/pianoPlayingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="piano2"
+            android:scaleType="fitCenter"
+            app:layout_column="1"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="1"
+            app:srcCompat="@drawable/piano_playing_image" />
+
+        <ImageButton
+            android:id="@+id/pianoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="piano1"
+            android:scaleType="fitCenter"
+            app:layout_column="4"
+            app:layout_columnSpan="2"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="0"
+            app:srcCompat="@drawable/piano_image" />
+
+        <ImageButton
+            android:id="@+id/guitarPlayingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="guitar2"
+            android:scaleType="fitCenter"
+            app:layout_column="2"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="1"
+            app:srcCompat="@drawable/guitar_playing_image" />
+
+        <ImageButton
+            android:id="@+id/acogiButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="guitra1"
+            android:scaleType="fitCenter"
+            app:layout_column="3"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="1"
+            app:srcCompat="@drawable/guitar_playing" />
+
+        <ImageButton
+            android:id="@+id/guitarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="guitra1"
+            android:scaleType="fitCenter"
+            app:layout_column="3"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="0"
+            app:srcCompat="@drawable/guitar_image" />
+
+        <ImageButton
+            android:id="@+id/drumPlayingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="drum2"
+            android:scaleType="fitCenter"
+            app:layout_column="4"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="1"
+            app:srcCompat="@drawable/drum_playing_image" />
+
+        <ImageButton
+            android:id="@+id/drumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="drum1"
+            android:scaleType="fitCenter"
+            app:layout_column="2"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="0"
+            app:srcCompat="@drawable/drum_image" />
+
+        <ImageButton
+            android:id="@+id/cymbakPlayingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="cymbal2"
+            android:scaleType="fitCenter"
+            app:layout_column="5"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="1"
+            app:srcCompat="@drawable/cymbal_playing_image" />
+
+        <ImageButton
+            android:id="@+id/cymbalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:onClick="cymbal1"
+            android:scaleType="fitCenter"
+            app:layout_column="1"
+            app:layout_gravity="center_horizontal|fill"
+            app:layout_row="0"
+            app:srcCompat="@drawable/cymbal_image" />
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
